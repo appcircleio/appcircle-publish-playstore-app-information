@@ -1,0 +1,12 @@
+platform: Android
+purpose: Publish
+structureType: CustomUI
+runOn: "Server"
+buildPlatform:
+displayName: "App Information from Google Play Store"
+description: "Gets package details from Google Play Store"
+marketPlace: "GooglePlayStore"
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
